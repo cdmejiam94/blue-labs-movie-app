@@ -27,22 +27,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/outlinedTextField"
-                    android:theme="@style/Theme.MaterialComponents.Light"
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/sbTopMovies"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Peliculas Top"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/sbTopMovies"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:theme="@style/Theme.MaterialComponents.Light"
-                        />
-
-                </com.google.android.material.textfield.TextInputLayout>
+                    app:queryHint="Buscar..."
+                    app:iconifiedByDefault="false"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.recyclerview.widget.RecyclerView
@@ -64,22 +54,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/topMoviesRecycler">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/outlinedTextField2"
-                    android:theme="@style/Theme.MaterialComponents.Light"
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/sbOnCinemas"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Peliculas en Cines"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/sbOnCinemas"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:theme="@style/Theme.MaterialComponents.Light"
-                        />
-
-                </com.google.android.material.textfield.TextInputLayout>
+                    app:queryHint="Buscar..."
+                    app:iconifiedByDefault="false"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

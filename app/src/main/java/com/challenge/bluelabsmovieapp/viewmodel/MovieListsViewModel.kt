@@ -20,4 +20,12 @@ class MovieListsViewModel(
         apiController.getOnCinemasMovies()
     }
 
+    fun getTopMoviesLiveDataContent() : MoviesResponse?{
+        return topMoviesListData.value
+    }
+
+    fun getOnCinemasLiveDataContent() : MoviesResponse?{
+        return onCinemasMoviesListData.value
+    }
+
 }
