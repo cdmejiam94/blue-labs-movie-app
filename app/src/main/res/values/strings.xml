@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BlueLabs Movie App</string>
+    <string name="about">Acerca de</string>
+    <string name="description">La aplicación te permite consultar las películas que están en cartelera y las mejores calificadas por la crítica. Con cada inicio, la aplicación realizará una descarga de datos directa de la api TMDB para permitir consultar películas Offline (Max 20) </string>
 </resources>
