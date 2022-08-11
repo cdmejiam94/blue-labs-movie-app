@@ -14,7 +14,7 @@ import com.challenge.bluelabsmovieapp.ui.activity.ActivityMovie
 
 class SplashScreen : AppCompatActivity() {
 
-    private val SPLASH_TIME_OUT: Long = 500
+    private val SPLASH_TIME_OUT: Long = 50
     private val ANIMATION_TIME_OUT: Long = 3000
 
     override fun onCreate(savedInstanceState: Bundle?) {

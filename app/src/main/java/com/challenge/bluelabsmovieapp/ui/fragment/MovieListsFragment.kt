@@ -49,7 +49,7 @@ class MovieListsFragment : Fragment(), CustomMovieListener {
             if(it != null){
                 binding.topMoviesRecycler.apply {
                     layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-                    adapter = MoviesAdapter(it.results, this@MovieListsFragment)
+                    adapter = MoviesAdapter(it.results, this@MovieListsFragment, requireActivity())
                 }
             }
         })
@@ -58,7 +58,7 @@ class MovieListsFragment : Fragment(), CustomMovieListener {
             if(it != null){
                 binding.onCinemasRecycler.apply {
                     layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-                    adapter = MoviesAdapter(it.results, this@MovieListsFragment)
+                    adapter = MoviesAdapter(it.results, this@MovieListsFragment, requireActivity())
                 }
             }
         })
@@ -71,6 +71,6 @@ class MovieListsFragment : Fragment(), CustomMovieListener {
     }
 
     override fun getSelectedItemDocId(result: Result) {
-        TODO("Not yet implemented")
+
     }
 }

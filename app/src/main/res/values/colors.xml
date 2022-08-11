@@ -11,4 +11,6 @@
     <color name="colorPrimary">@android:color/holo_blue_dark</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FFFFFF</color>
+    <color name="colorBGCard">#E1F5FE</color>
+    <color name="colorBGFragment">#E8EAF6</color>
 </resources>
