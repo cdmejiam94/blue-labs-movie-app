@@ -49,7 +49,7 @@ class MovieListsFragment : Fragment(), CustomMovieListener {
 
         movieListsViewModel = ViewModelProviders.of(
             this,
-            MovieListsViewModelFactory(ApiController())
+            MovieListsViewModelFactory(ApiController(), requireActivity().application)
         )[MovieListsViewModel::class.java]
 
         binding.sbTopMovies.setOnQueryTextListener(object :
@@ -102,6 +102,8 @@ class MovieListsFragment : Fragment(), CustomMovieListener {
 
         movieListsViewModel.getOnCinemasMovies()
 
+        movieListsViewModel.saveAllMovies()
+
         return binding.root
     }
 
@@ -138,6 +140,6 @@ class MovieListsFragment : Fragment(), CustomMovieListener {
     }
 
     override fun getSelectedItemDocId(result: Result) {
-
+        Toast.makeText(requireContext().applicationContext,"Selecciono la pelicula: ${result.title}",Toast.LENGTH_SHORT).show()
     }
 }

@@ -45,6 +45,7 @@ class MoviesAdapter (
 
             Glide.with(activity)
                 .load("${IMG_BASE_URL}${result.poster_path}")
+                .error(R.drawable.image)
                 .into(itemView.findViewById(R.id.rvMoviePoster))
 
             itemView.findViewById<TextView>(R.id.rvTitle).text = result.title
