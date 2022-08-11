@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@cdmejiam94 
+cdmejiam94
+/
+blue-labs-movie-app
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+blue-labs-movie-app/.gitignore
+@cdmejiam94
+cdmejiam94 Initial commit
+Latest commit 857e360 5 hours ago
+ History
+ 1 contributor
+85 lines (68 sloc)  1.4 KB
+
 # Built application files
 *.apk
 *.aar
@@ -83,3 +112,18 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+You have no unread notifications
