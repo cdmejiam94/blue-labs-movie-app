@@ -4,10 +4,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "movies")
-class DBMovie(posterPath: String?, title: String?, voteAverage: Double?, id: Int?) {
+data class DBMovie(
     @PrimaryKey
-    val movieId: Int = 0
-    val originalTitle: String = ""
-    val votes: String = ""
-    val overview: String = ""
-}
+    val movieId: Int,
+    val originalTitle: String,
+    val votes: Double?,
+    val overview: String,
+)

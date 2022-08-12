@@ -37,7 +37,16 @@ class MovieListsViewModel(
 
     fun saveAllMovies(){
         for (movie in topMoviesListData.value!!.results){
-            saveMovies(DBMovie(movie.poster_path,movie.title,movie.vote_average,movie.id))
+            movie.title?.let {
+                movie.id?.let { it1 ->
+                    movie.poster_path?.let { it2 ->
+                        DBMovie(
+                            it1.toInt(),
+                            it,movie.vote_average, it2
+                        )
+                    }
+                }
+            }?.let { saveMovies(movie = it) }
         }
     }
 
